@@ -85,19 +85,8 @@ python client.py
 
 ---
 
-## 🤝 Contributions
-
-Contributions are welcome! Please open an issue or pull request for suggestions, improvements, or bug reports.
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-
-## 📬 Contact
-
-Questions or suggestions?  
-[itsronalds](https://github.com/itsronalds)
