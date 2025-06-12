@@ -1,96 +1,103 @@
-# node-python-websocket
+# WebSocket Integration: Node.js Server & Python Client
 
-## Overview
+Mini demonstration project showcasing real-time communication between a **WebSocket server built with Node.js** and a **client implemented in Python**.  
+Ideal for educational purposes, prototyping, or as a reference for cross-language WebSocket integration.
 
-This project demonstrates real-time invoice transmission using WebSockets. It consists of a **native Node.js server** and a **Python client** that communicate through WebSockets. The data is stored in an **SQL Server** database, either locally or in the cloud.
+---
 
-## Prerequisites
+## 🚀 Main Features
 
-Ensure you have the following installed before proceeding:
+- **WebSocket Server in Node.js**  
+  Implements an efficient and simple server using `ws`, enabling real-time connections.
 
-- [Node.js](https://nodejs.org/)
-- [Python](https://www.python.org/)
-- [SQL Server](https://www.microsoft.com/en-us/sql-server/) (local instance or cloud-hosted)
+- **WebSocket Client in Python**  
+  Lightweight client that interacts with the server using `websockets` or `websocket-client`.
 
-## Installation
+- **Bidirectional Communication**  
+  Send and receive real-time messages between both environments.
 
-### Clone the Repository
+- **Simple and Well-Documented Code**  
+  Designed for easy understanding, modification, and extension.
 
-To get started, clone the repository:
+---
 
-```bash
-git clone https://github.com/itsronalds/node-python-websocket.git
+## 📂 Project Structure
+
+```
+.
+├── server/                # Node.js server code
+│   └── server.js
+├── client/                # Python client code
+│   └── client.py
+├── README.md
+├── package.json           # Node.js dependencies
+└── requirements.txt       # Python dependencies
 ```
 
-## Setting Up the Node.js Server
+---
 
-### Install Dependencies
+## 🛠️ Requirements
 
-Navigate to the `server` directory and install dependencies:
+- [Node.js](https://nodejs.org/) (v14+ recommended)
+- [Python](https://www.python.org/) (3.7+ recommended)
+
+---
+
+## ⚡ Installation & Running
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/itsronalds/websocket-integration-node-python.git
+cd websocket-integration-node-python
+```
+
+### 2. Set up and run the Node.js server
 
 ```bash
 cd server
 npm install
+node server.js
 ```
 
-### Configure Environment Variables
-
-Create a `.env` file in the `server` directory and define the required variables:
+### 3. Set up and run the Python client
 
 ```bash
-# File: .env
-
-PORT=8000
-MSSQL_CONNECTION_STRING=Server=server_name,port;Database=database_name;User Id=user;Password=password;Encrypt=true
+cd ../client
+pip install -r ../requirements.txt
+python client.py
 ```
 
-> **Note:** Replace `server_name`, `port`, `database_name`, `user`, and `password` with your actual database credentials.
+---
 
-### Start the Server
+## 📝 Usage Example
 
-Once everything is set up, start the server:
+- Start the server.
+- Launch the Python client.
+- Observe both terminals for real-time message sending and receiving.
 
-```bash
-npm start
-```
+---
 
-## Setting Up the Python Client
+## 🧩 Core Technologies
 
-### Create and Activate a Virtual Environment
+- **Node.js** + [ws](https://www.npmjs.com/package/ws)
+- **Python** + [websockets](https://websockets.readthedocs.io/) or [websocket-client](https://pypi.org/project/websocket-client/)
 
-Navigate to the `client` directory and set up a virtual environment:
+---
 
-```bash
-cd client
-python -m venv venv
-```
+## 🤝 Contributions
 
-Activate the virtual environment:
+Contributions are welcome! Please open an issue or pull request for suggestions, improvements, or bug reports.
 
-```bash
-# On Windows
-venv\Scripts\activate
+---
 
-# On macOS/Linux
-source venv/bin/activate
-```
+## 📄 License
 
-### Install Dependencies
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-With the virtual environment activated, install the required dependencies:
+---
 
-```bash
-pip install -r requirements.txt
-```
+## 📬 Contact
 
-### Run the Client
-
-Start the Python client by running:
-
-```bash
-python main.py
-```
-
-## Expected Outcome 🚀
-
-After completing the above steps, the Node.js server should be running, and the Python client should be able to send real-time invoices via WebSockets.
+Questions or suggestions?  
+[itsronalds](https://github.com/itsronalds)
