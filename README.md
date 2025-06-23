@@ -82,11 +82,3 @@ python client.py
 
 - **Node.js** + [ws](https://www.npmjs.com/package/ws)
 - **Python** + [websockets](https://websockets.readthedocs.io/) or [websocket-client](https://pypi.org/project/websocket-client/)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
